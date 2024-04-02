@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container{display:flex; background-color: grey; 
+              margin: 10px; height: 200px;}
+    .box{padding: 20px; margin: 10px; background-color: black;
+         width: 100px; color: white; text-align: center;}
+    #opt1{align-items: flex-start;}
+    #opt2{align-items:flex-end ;}
+    #opt3{align-items: center;}
+    #opt4{align-items: baseline ;}
+    #opt5{align-items: stretch;}
+  </style>
+</head>
+<body>
+  <div class="container" id="opt1">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+    <div class="box">4</div>
+  </div>
+
+  <div class="container" id="opt2">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+    <div class="box">4</div>
+  </div>
+
+  <div class="container" id="opt3">
+    <div class="box" style="font-size: 15px;">1</div>
+    <div class="box" style="font-size: 25px;">2</div>
+    <div class="box" style="font-size: 30px;">3</div>
+    <div class="box" style="font-size: 5px;">4</div>
+  </div>
+
+  <div class="container" id="opt4">
+    <div class="box" style="font-size: 15px;">1</div>
+    <div class="box" style="font-size: 25px;">2</div>
+    <div class="box" style="font-size: 30px;">3</div>
+    <div class="box" style="font-size: 5px;">4</div>
+  </div>
+
+  <div class="container" id="opt5">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+    <div class="box">4</div>
+  </div>
+</body>
+</html>

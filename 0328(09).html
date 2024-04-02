@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>373p.</title>
+  <style>
+    .page-title h1{text-align: center;}
+    .prod-list ul{list-style: none;}
+    .prod-list li{float: left; padding: 20px;
+      position: relative; overflow: hidden;}
+    .prod-list li:hover .caption{
+        opacity: 1;
+        transform: translatey(-225px);
+    }
+    .prod-list .caption{
+      position:absolute;
+      width: 300px; height: 200px;
+      top:100%; 
+      z-index: 10;
+      color: aliceblue;
+      background-color: rgba(0,0,0,0.5);
+      opacity: 0;
+      transition: all 0.5s ease-in-out;
+      text-align: center;
+    }
+  
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="page-title">
+      <h1>신상품목록</h1>
+    </div>
+    <div class="prod-list">
+      <ul>
+        <li>
+          <img src="image/prod1.jpg">
+          <div class="caption">
+            <h2>상품1</h2>
+            <p>상품1 설명</p>
+            <p>가격2만원</p>
+          </div>
+
+        </li>
+        <li>
+          <img src="image/prod2.jpg">
+          <div class="caption">
+            <h2>상품2</h2>
+            <p>상품2 설명</p>
+            <p>가격24만원</p>
+          </div>
+        </li>
+        <li>
+          <img src="image/prod3.jpg">
+          <div class="caption">
+            <h2>상품3</h2>
+            <p>상품3 설명</p>
+            <p>가격20만원</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>

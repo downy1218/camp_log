@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>레이아웃 만들기</title>
+  <style>
+    #nav ul{list-style: none;}
+    #nav li{
+      display: block;
+      padding: 20px;
+      margin: 20px;
+      border: 1px solid grey;
+    }
+  </style>
+</head>
+<body>
+  <div style="border:1px solid black; width: 100px; height: 100px;
+  display: inline;">           <!--블럭요소를 인라인으로바꿔준 디스플레이인라인-->
+    나는 디아이브이 블럭요소</div> 
+
+    <span style="border:1px solid black; width: 100px; height: 100px;
+    display: block;">   <!--인라인을 블럭요소로 만들어줌-->
+    나는스팬 인라인요소</span>
+
+    <div id="nav">
+      <ul>
+        <li>meun1</li>
+        <li>menu2</li>
+        <li>menu3</li>
+        <li>menu4</li>
+      </ul>
+    </div> 
+</body>
+</html>

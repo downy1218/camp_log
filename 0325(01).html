@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form action="">
+    <fieldset>
+      <legend>회원가입</legend>
+      <label for="">아이디: 
+      <input type="text"></label>
+    </fieldset>
+    <fieldset>
+      <legend>배송지명</legend>
+      <label for="adress">상세주소:
+      <input type="text"></label>
+    </fieldset>
+
+    <fieldset>
+      <legend>상품선택</legend>
+      <h1>주문할 상품을 선택하세요</h1>
+      <label for="check1">선물용 3 kg</label>
+      <input type="checkbox" name="gift_we"  value="s_3" id="check1">  <!--여기서 밸류값은 서버로 넘길때 식별하는 용도-->
+      <label for="check2">선물용 5 kg</label>
+      <input type="checkbox" name="gift_we" value="s_3" id="check2">
+
+      <h1>포장 선택 유무를 선택하세요</h1>
+      <label for="rd1">포장 선택함</label>
+      <input type="radio" name="gift_tp"  value="yes" id="rd1" checked>
+      <label for="rd2">포장 안함</label>
+      <input type="radio" name="gift_tp"  value="no" id="rd2" >
+      
+      <input type="submit">
+    </fieldset>
+    <fieldset> 
+    <h2>숫자 관련 입력</h2>
+    <input type="number" name="many" min="0" max="20" step="2">
+    <input type="range" name="range" min="0" max="20" value="6">
+
+    <input type="submit">
+    </fieldset>
+
+    <fieldset>
+      <h2>날짜관련입력</h2>
+      <input type="date" name="all_date">
+      <input type="month" name="month">
+      <input type="week" name="week">
+      <input type="submit">
+    </fieldset>
+
+    <fieldset>
+      <h2>시간 관련입력</h2>
+      <input type="time" name="all_time">
+      <input type="datetime" name="datetime">
+      <input type="datetime-local" name="dtl">
+      <input type="submit">
+    </fieldset>
+    <input type="text" name="test">
+    <input type="reset" value="취소">
+
+    <fieldset>
+      <label>아이디:<input type="text" name="id"></label>
+      <input type="image" src="image/heart.png" width="50px" alt="가입">
+      <input type="button" value="가입버튼" onclick="alert('김수연은 원숭이라는 동물입니다')">
+      <button type="button">전송버튼</button>
+    </fieldset>
+  
+    
+
+
+
+  </form>
+
+
+
+
+
+
+
+</body>
+</html>

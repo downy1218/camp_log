@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container{display:flex; background-color: grey; /*flex가 플로트 레프트를 대신해서 옆으로보내줌*/
+              margin: 10px;}
+    .box{padding: 20px; margin: 10px; background-color: black;
+         width: 100px; color: white; text-align: center;}
+    #opt1{flex-wrap: nowrap;}
+    #opt2{flex-wrap: wrap;}
+    #opt3{flex-wrap: wrap-reverse;}
+  </style>
+</head>
+<body>
+  <div class="container" id="opt1">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+    <div class="box">4</div>
+    <div class="box">5</div>
+    <div class="box">6</div>
+  </div>
+  <div class="container" id="opt2">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+    <div class="box">4</div>
+    <div class="box">5</div>
+    <div class="box">6</div>
+  </div>
+  <div class="container" id="opt3">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+    <div class="box">4</div>
+    <div class="box">5</div>
+    <div class="box">6</div>
+  </div>
+</body>
+</html>

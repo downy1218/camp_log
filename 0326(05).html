@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>리스트 스타일 블릿기호, 폼 레이블 정렬하기 </title>
+  <style>
+    li{
+      list-style: none;
+    }
+    label{
+         float: left;
+         width: 110px;          /*레이블 칸 일자로 정렬*/
+    }
+    button{
+      margin: auto;      /*제출버튼 가운데로 정렬*/
+      display: block;  
+    }
+    input[required]{border: 1px solid red}
+    input[readonly]{border: none;}
+
+    #submit{border:none;} /* fieldset:last-of-type{border:none;} 가상선택자로 할 수도 잇음*/
+
+    button{background-color: black; color: bisque;}
+    button:hover{background-color: rgb(233, 96, 176);}
+    input:not([type=radio]){width: 200px;}
+    /*input[type=text],input[type=password],input[type=tel],input[type=email]{width:200px;} 인풋 낫 라디오 풀어쓴거*/
+   
+    table{
+      caption-side:bottom;
+      border:1px solid black;
+      border-spacing:10px;
+      border-collapse:separate;
+    }
+    td,th{
+      border:1px solid black;
+    }
+      
+  </style>
+</head>
+<body>
+  <h1>도서 리스트</h1>
+  <ul>
+    <li>목록1</li>
+    <li>목록2</li>
+    <li>목록3</li>
+  </ul>
+
+  <table>
+    <caption>표 꾸미기</caption>
+    <thead>
+      <tr>
+        <th>컬럼명1</th>
+        <th>컬럼명2</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>데이터1</td>
+        <td>데이터2</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h2>폼 레이블 정렬</h2>
+  <form action="">
+    <fieldset>
+      <legend>로그인 정보</legend>
+      <ul id="login">
+        <li>
+        <label for="userid">아이디</label>
+        <input type="text" id="userid" name="usernid" autofocus required>
+        </li>
+        <li>
+          <label for="userpsw1">비밀번호</label>
+          <input type="password" id="userpsw1" name="userpsw1" required  autofocus >
+        </li>
+        <li>
+          <label for="userpsw2">비번 확인</label>
+          <input type="password" id="userpsw2" name="usernpsw2" required    autofocus>
+        </li>
+        <li>
+          <label for="usergd">회원등급</label>
+          <input type="text" id="usergd" name="userngd"  autofocus readonly value="준회원">
+        </li>
+      </ul>
+      
+    </fieldset>
+
+
+    <fieldset>
+      <legend>개인정보</legend>
+    <ul>
+      <li>
+        <label for="username">이름</label>
+        <input type="text" name="username" id="name" placeholder="5자미만공백없이" required>
+      </li>
+      <li>
+        <label for="usermail">이메일</label>
+        <input type="email" placeholder="asdf@.com" id="email" name="email" required>
+      </li>
+      <li>
+        <label for="tel">연락처</label>
+        <input type="tel" id="tel" name="tel">
+      </li>
+    </ul>
+  </fieldset>
+    <fieldset id="submit">
+      <button type="button">제출</button>
+    </fieldset>
+  </form>
+</body>
+</html>

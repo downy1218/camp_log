@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>11장 변형 알아보기</title> <!--수업영상 다시보고 해보기;;-->
+  <style>
+    #container{width: 100%; height: 200px;}
+    .origin{width: 100px; height: 100px; border: 1px solid black; float: left; margin: 100px;}
+    .origin div{
+      width: 100px; height: 100px; background-color: rgb(171, 150, 111);
+    }
+    #movex:hover{transform: translatex(50px);}
+    #movey:hover{transform: translatey(50px);}
+    #movexy:hover{transform: translate(50px,50px);}
+
+    #rotate1:hover{transform: rotate(45deg);}
+    #rotate2:hover{transform: rotate(-45deg);}
+    
+    .rotatex:hover{transform: rotateX(45deg);}
+    #perspective{perspective: 300px;}
+
+    #rotatex:hover{transform: rotatex(45deg);}
+    #rotatey:hover{transform: rotatey(45deg);}
+    #rotatez:hover{transform: rotatez(45deg);}
+    #rotatexyz:hover{transform: rotatex(45deg);}
+  </style>
+</head>
+<body>
+  <div id="container">
+    <div class="origin">
+      <div id="movex">item1</div>
+    </div>
+    <div class="origin">
+      <div id="movey">item2</div>
+    </div>
+    <div class="origin">
+      <div id="movexy">item3</div>
+    </div>
+  </div>
+
+  <div id="container">
+    <div class="origin">
+      <div img src="image/custom_image_list.png" id="rotate1">item1</div>
+    </div>
+    <div class="origin">
+      <div img src="image/custom_image_list.png" id="rotate2">item2</div>
+    </div>
+  
+    <h1>3차원회전</h1>
+    <div id="container">
+      <div class="origin perspective">
+        <div class="rotatex">
+          <div img src="image/custom_image_list.png" >
+        </div>
+      </div>
+      <div class="origin" id="perspective">
+        <div class="rotatex">
+          <div img src="image/custom_image_list.png" >
+        </div>
+      </div>
+     
+<div id="container">
+  <div class=origin>
+    <div id="rotatex">item1</div>
+  </div>
+</div>
+<div class=origin>
+  <div id="rotatey">item2</div>
+</div>
+<div class=origin>
+  <div id="rotatez">item3</div>
+</div>
+<div class=origin>
+  <div id="rotatexyz">item4</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

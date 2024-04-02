@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>overflow</title>
+  <style>
+    div{width: 100px; height: 100px; margin: 5px;
+        border: 1px solid black; float: left; }
+        #box2{overflow: hidden;} /*넘치면 자름 칸에 맞춰서 보여줌*/
+        #box3,#box4{overflow: scroll;}
+        #box5,#box6{overflow: auto;}
+  </style>
+</head>
+<body>
+  <h1>overflow</h1>
+  <div id="box1">visible(디폴트)visible(디폴트)visible(디폴트)visible(디폴트)visible(디폴트)visible(디폴트)visible(디폴트)</div> 
+  <div id="box2">hidden hidden hidden hidden hidden hidden hidden hidden hidden hidden hidden </div>
+  <div id="box3">scroll scroll scroll scroll scroll scroll scroll scrollvscrollscrollscroll</div>
+  <div id="box4">scroll2 scroll2 scroll2 scroll2 dgsdfsfdsd</div>
+  <div id="box5">auto auto auto </div>
+  <div id="box6">auto2 auto2 auto2 auto2 auto2 auto2 auto2 auto2 auto2 auto2 auto2 auto2 auto2</div> 
+
+</body>
+</html>

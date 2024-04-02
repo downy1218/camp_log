@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>12장</title>
+  <style>
+    body{
+      background: url("image/뷰포트1.jpg") no-repeat fixed;
+      background-size: cover;
+    }
+    #div1{color:aliceblue; font-size: 10vw;}
+    @media screen and (max-width:1024px){
+      body{
+      background: url("image/뷰포트2.jpg") no-repeat fixed;
+      background-size: cover;
+    }
+  }
+    #div2{color:aliceblue; font-size: 10vw;}
+
+    @media screen and (max-width:768px){
+      body{
+      background: url("image/뷰포트3.jpg") no-repeat fixed;
+      background-size: cover;
+    }
+    #div3{color:aliceblue; font-size: 10vw;}
+    }
+    @media screen and (max-width:320px){
+      body{
+      background: url("image/뷰포트4.jpg") no-repeat fixed;
+      background-size: cover;}
+    }
+    #div4{color:aliceblue; font-size: 10vw;}
+
+
+
+
+
+</style>
+</head>
+<body>
+  <div id="div1">대 화면</div>
+  <div id="div2">중 화면</div>
+  <div id="div3">소 화면</div>
+  <div id="div4">초소형화면</div>
+</body>
+</html>

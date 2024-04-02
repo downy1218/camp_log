@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>애니메이션</title>
+  <style>
+    .box{width: 100px; height: 100px; margin: 50px;
+         background-color: rgb(212, 175, 126);}
+    #box1{
+      background-color: rgb(205, 250, 4);
+      animation-name: shape;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+    }
+    @keyframes shape{
+      from{border:1px solid transparent;}
+      to{border:1px solid black; border-radius: 50%;}
+    }
+    #box2{
+      background-color: blanchedalmond;
+      animation-name: rotate;
+      animation-duration: 3s;
+      animation-iteration-count: 2;
+    }
+    @keyframes rotate{
+      from{transform:rotate(0deg);}
+      to{transform: rotate(45deg);}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+  </div>
+</body>
+</html>

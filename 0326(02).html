@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>가상클래스</title>
+  <style>
+    .navi ul{
+      list-style: none;       /*리스트하면 생성되는 글자 앞에 점을 없앰*/
+    }
+    .navi ul li {
+      float: left; 
+    }
+    .navi a {padding: 20px; text-decoration:none ; color: black;}
+    .navi a:hover{color:plum}  /*마우스올렷을때 색 변경*/
+    .navi a:active{background-color: white;}
+    .content{clear:both}
+    #intro:target, #room:target{background-color: bisque;}
+    textarea:disabled{background-color: bisque;}
+    input:checked+label{color:red}
+    input:not([type=radio]){border: 1px solid blue;}
+
+
+  </style>
+</head>
+<body>
+<div class="container">
+  <nav class="navi">
+    <ul>
+      <li><a href="#intro">이용안내</a></li>
+      <li><a href="#room">객실</a></li>
+      <li><a href="#">비용</a></li>
+      <li><a href="#resv">예약하기</a></li>
+    </ul>
+  </nav>
+
+  <div class="content">
+    <div id="intro">
+      <h2>이용안내</h2>
+      <p>금연하세요</p>
+    </div>
+    <div id="room">
+      <h2>객실소개</h2>
+      <p>스위트룸 침대 2개</p>
+    </div>
+    <div id="resv">
+      <h2>에약하기</h2>
+      <form action="">
+        <textarea disabled>약관이어쩌구저쩌구티비</textarea>
+
+        <label for="customer-name">고객명</label>
+        <input type="text" name="ctname" id="customer-name">
+        <label for="tel">전화번호</label>
+        <input type="tel" name="number" id="tel">
+
+        <ul id="roomtType">
+          <li>
+            <input type="radio" name="room" id="basic">
+            <label for="basic">기본형</label>
+          </li>
+          <li>
+            <input type="radio" name="room" id="family">
+            <label for="family">가족형</label>
+          </li>
+        </ul>
+      </form>
+    </div>
+  <a href="https://www.daum.net">방문하지않은페이지</a>
+   <input type="text">
+  
+  </div>
+  
+</body>
+</html>

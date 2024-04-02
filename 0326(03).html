@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>구조가상클래스</title>
+  <style>
+    .contents :nth-child(3){background-color: pink;} 
+    /*컨텐츠뒤에 한번 뛰고 : 해야 적용됨*/
+    .contents p:nth-of-type(3){background-color: rgb(139, 53, 67);}
+    .contents p:nth-of-type(2n+1){color:blue}
+
+
+    li.new::after{content: "new!!"; color: red;}
+    /*li.new::before{content: "new!!"; color: red;}  이건 앞에다가 new 추가해주는거*/
+
+    
+
+  </style>
+</head>
+<body>
+  <p>구조가상클래스</p>
+  <div class="contents">
+    <p>내용1</p>
+    <div>짜장면</div>
+    <p>내용2</p>
+    <p>내용3</p>
+    <p>내용4</p>
+    <p>내용5</p>
+    <p>내용6</p>
+    <p>내용7</p>
+  </div>
+
+<!--여기서부터는 가상요소 (책 346쪽) ------------------------------->
+
+  <div class="container">
+    <h1>제품목록</h1>
+    <ul>
+      <li class="new">제품에이</li>
+      <li>제품비</li>
+      <li>제품씨</li>
+      <li>제품디</li>
+    </ul>
+  </div>
+</body>
+</html>

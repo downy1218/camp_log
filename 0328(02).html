@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>그라데이션</title>
+  <style>
+    div{float:left; width: 200px; height: 200px; border: 1px solid black;}
+    #grad1{background: linear-gradient(to right bottom, rgb(136, 136, 237),white);}
+    #grad2{background: linear-gradient(45deg,rgb(47, 47, 175),white);}
+    #grad3{background: linear-gradient(45deg,rgb(129, 129, 255),rgb(136, 224, 242)50%,white);}
+    #grad4{background: radial-gradient(blue, red 30%, white);width: 300px;}
+    #grad5{background: radial-gradient(circle,blue, red 30%, white);width: 300px;}
+    #grad6{background: radial-gradient(circle closest-side at 30% 40% ,white,yellow,green);}
+    #grad7{background: radial-gradient(circle closest-corner at 30% 40%, white,yellow,green);}
+    #grad8{background: radial-gradient(circle farthest-side at 30% 40%, white,yellow,green);}
+    #grad9{background: radial-gradient(circle farthest-corner at 30% 40% ,white,yellow,green);}
+    #grad10{background: radial-gradient(circle at 30% 40%, white,yellow,green);}
+    .circle{
+      width: 300px; height: 300px;
+      background: radial-gradient(circle at 20% 20%, white,blue);
+      border-radius: 50%;
+      box-shadow: 10px 10px 10px grey;
+    }
+  </style>
+</head>
+<body>
+  <div id="grad1"></div>
+  <div id="grad2"></div>
+  <div id="grad3"></div>
+  <div id="grad4"></div>
+  <div id="grad5"></div>
+  <div id="grad6"></div>
+  <div id="grad7"></div>
+  <div id="grad8"></div>
+  <div id="grad9"></div>
+  <div id="grad10"></div>
+ <div class="circle">
+
+
+ </div>
+</body>
+</html>

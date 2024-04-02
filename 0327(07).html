@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>9장</title>
+  <style>
+  .desc{width: 100px; height: 100px; margin: 10px; border: 10px dashed rgb(101, 100, 100);
+        padding:10px; float: left; background-color: rgb(212, 245, 181);}
+        #borderbox{background-clip: border-box;}
+        #paddingbox{background-clip: padding-box ;}
+        #contentbox{background-clip:content-box ;}
+        div{width: 7000px; height: 400px;
+        background-image: url(image/치치카와.jpg);}
+        #repeat1{background-repeat: repeat;}
+        #repeat2{background-repeat: repeat-x;}
+        #repeat3{background-repeat:repeat-y ;}
+        #repeat4{background-repeat:no-repeat ;}
+
+
+        ul{list-style: none;}
+        li{background-image: url("image/custom_image_list.png");
+           background-repeat: no-repeat;
+          background-position: left;
+          padding-left: 40px;
+          line-height: 40px;
+        }
+        
+  </style>
+</head>
+<body>
+  <div class="container">  <!--배경범위지정(9-1장)-->
+    <div class="desc" id="borderbox">1</div>
+    <div class="desc" id="paddingbox">2</div>  
+    <div class="desc" id="contentbox">3</div>
+  </div>
+
+  <div id="repeat1">repeat</div>  <!--(9-2)-->
+  <div id="repeat2">repeat-x</div>
+  <div id="repeat3">repeat-y</div>
+  <div id="repeat4">no-repeat </div>
+
+
+  <ul>
+    <li>회사소개</li>
+    <li>도서</li>
+    <li>자료실</li>
+    <li>동영상강의</li>
+  </ul>
+
+  
+
+
+</body>
+</html>
+
