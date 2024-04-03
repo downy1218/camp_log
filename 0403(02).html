@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    alert("이것은 alert입니다");
+    var reply = confirm("그래도 하시겠습니까?");
+    console.log("확인결과:", reply); /*개발자도구 콘솔창에 보여주는것*/
+
+    var name = prompt("이름을 알려주세요", "배다은"); /*prompt로 입력창띄움*/
+    console.log("prompt결과:", name);
+
+    document.write("<p>숫자 맞히기 게임</p>"); /*위 동작이끝나면 화면에 보이는글*/
+    
+    var number = prompt ("내가 생각한 숫자를맞혀봐:", 20); /* , 까먹지말기..*/
+    if(number > 10){
+      document.write("<p>결과:와우 좀 높네요</p>");
+    }  
+    else{
+      document.write("<p>결과:음..좀만 더 높여봐요</p>");
+    }
+  </script>
+</body>
+</html>

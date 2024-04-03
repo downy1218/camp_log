@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3의 배수에서 짝</title>
+</head>
+<body>
+  <script>
+    console.log("5%3:", 5%3 )
+    for(let i =1; i<=30; i++){  //i가 1부터 시작해서 30이하까지, 1씩증가
+      if(i % 3 ==0){
+        document.write("<span> 짝</span>");
+      } else{
+        document.write("<span> "+i+" </span>");
+      }
+    }
+    var a = 10;
+    var b = a++ +5;
+    console.log("b:", b) //b:15 (10+5) 후에 a:11
+  </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>if문 중첩</title>
+</head>
+<body>
+  <script>
+    var userNumber = prompt("숫자를 입력하세요"); //확인만 클릭하면 빈문자열 취소클릭하면 null
+    if(userNumber !== "" && userName !== null){   //&&(and)연산자
+      if(userNumber % 3 ===0){
+        alert("입력된 숫자는 3의 배수입니다")
+      }
+      else{
+        alert("3의 배수가 아닙니데이~")
+      }
+    }
+    else{
+      alert("값이 없어")
+    }
+  </script>
+</body>
+</html>
