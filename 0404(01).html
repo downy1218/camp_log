@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>자리배치도 만들기</title>
+</head>
+<body>
+  <script>
+    var totalNum = prompt("전체 몇명입니까?");
+    var colMax = prompt("한 줄엔 몇명?");
+    var rowNum = 0;
+    if(totalNum % colMax === 0) //칸 크기를 정사각형으로 만들기 위한것
+      rowNum = parseInt(totalNum / colMax); //parseInt: 문자열을 정수로 변환하는 내장함수
+    else
+      rowNum = parseInt(totalNum / colMax) +1 ; //나머지가 있을때 자리가 부족한것보다 많아야하니까 +1
+    document.write(`<p>모두  ${rowNum} 줄 필요해요</p>`); //+안쓰고 백틱`이랑 ${}//
+
+  </script>
+</body>
+</html>

@@ -16,13 +16,17 @@
 
     document.write("<p>숫자 맞히기 게임</p>"); /*위 동작이끝나면 화면에 보이는글*/
     
-    var number = prompt ("내가 생각한 숫자를맞혀봐:", 20); /* , 까먹지말기..*/
+    var number = prompt ("내가 생각한 숫자를맞혀봐:"); 
     if(number > 10){
       document.write("<p>결과:와우 좀 높네요</p>");
     }  
+      else if(number ==20){
+      document.write(`<span>정답입니닼ㅋ!!</span>`);
+      }
     else{
       document.write("<p>결과:음..좀만 더 높여봐요</p>");
     }
+    
   </script>
 </body>
 </html>

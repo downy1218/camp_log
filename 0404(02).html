@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>반복문</title>
+</head>
+<body>
+  <h1>for 반복문</h1>
+  <script>
+    var sumValue = 0;
+    for(var i = 0; i < 6; i++){ //5까지 반복하고 마지막문장출력
+      document.write(`<p> 현재 i는 ${i} 입니다`);
+      sumValue += i;
+    }
+    document.write(`<p>현재 sumValue 는 ${sumValue}입니다</p>`);
+  </script>
+
+  <h2>while 반복문</h2>
+  <script>
+    var i =0;
+    var sumValue = 0;
+    while ( i < 6){ //i가 5까지일때만 실행한다는 조건 
+      document.write(`<p> 현재 i는 ${i} 입니다`);
+      sumValue = sumValue + i; //썸밸류에 i 누적
+      i++; //i 1씩 증가시킴 
+    }
+    document.write(`<p> 현재 sumValue는 ${sumValue} 입니다`); //계속 누적해온 값 출력
+  </script>
+
+  <h2> break continue</h2>
+  <script>
+    var myday = 0;
+    var sick = 0;
+    for(var day = 1; day <= 90; day++){
+        sick++;
+        if (sick >= 80) break; //80일만하고 끝냄
+        if (sick % 10 == 0 ) continue; //10일에 한번씩 아픈날 건너뜀
+
+        myday++;
+    }
+    document.write(`<p>나는 ${myday}일 참여 했어요</p>`)
+  </script>
+
+
+
+  <h2> for 중첩</h2>        
+  <script>
+    var mydayc = 0;
+    var mytime = 0;
+    for(var day = 1; day <= 90; day++){
+      for(var time = 1; time <= 8; time++){
+        //mytime+=time;
+        mytime++;
+      }
+         
+      
+      //mydayc+=day; 이거는 day의 누적합계를 나타냄(4095일)
+      mydayc++;
+    }
+    document.write(`<p>나는 ${mydayc}일 ${mytime}시간 참여 했어요</p>`)
+  </script>
+
+
+
+  <h2>구구단 만들기</h2>
+  <script>
+    var i,j;
+
+    for(i=1; i<=9; i++){
+      document.write(`<h3>${i}단</h3>`);
+      for(j=1; j<=9; j++){
+        document.write(i+"x"+j +"="+i*j+"<br>"); //내부for먼저 다 실행
+      }
+    }
+  </script>
+</body>
+</html>
