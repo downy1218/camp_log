@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>트리만들기 </title>
+</head>
+<body>
+  <p>파이썬으로 만들고싶어요..</p>
+  <h2>1. 그냥 삼각형만 만들기(왼->오)</h2>
+  <script>
+    for(var y=1; y<=7; y++){  
+      for(var s=1; s<=y; s++){
+        document.write(`<span>*</span>`)  
+      } 
+      document.write("<br>");
+    }
+  </script>
+  <h2>2. 삼각형 오->왼 내가 실패작이래~</h2>
+  <script>        //tlqkf뭐가문제야
+    for(var y=7; y>=1; y--){
+      for(var s=1; s<y; s++){
+        document.write(`<span> </span>`);
+      }
+      for(var st=7; st>=8-y; st--){
+        document.write(`<span>*</span>`);
+      }
+      document.write("<br>");
+    }
+  </script>
+  <h2>삼각형 오->왼</h2>
+  <script>
+    
+  </script>
+    </body>
+</html>
