@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>구구단처럼 한줄씩 출력하기(?)</title>
+</head>
+<body>
+  <script>
+    // var s;
+    // var f;
+    for( s = 1; s<=9; s++){
+      for(f = 1; f<=9; f++){                    //한줄씩 출력해야하는데
+        document.write(`<span> ${s*f}</span>`); //<p>는 블럭요소이므로 인라인요소(span)씀
+      }                                              //그래서 각 값들이 한줄에 출력
+      document.write("<br>");  //그 다음 각 단들이 다음줄에 출력
+     }
+    </script>
+  </script>
+</body>
+</html>

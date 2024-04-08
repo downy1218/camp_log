@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> 문제풀이 1.숫자받아 합 출력 </title>
+</head>
+  <script>
+    var snumber = parseInt(prompt("시작 숫자를 입력하세요")); //prompt는 값을 문자열로 받기 때문에 
+    var fnumber = parseInt(prompt("끝 숫자를 입력하세요"));   //parseInt로 써서 정수로 받아야함 
+    var sum = 0; // 초기값 설정
+    sum = snumber + fnumber;
+    while (snumber <= 10 && fnumber <= 10) { // 두 수가 모두 10 이하인지 확인
+    document.write("<p>sum of " + snumber + " to " + fnumber + " = " + sum + "</p>");
+    break;}
+  </script>
+</body>
+</html>
