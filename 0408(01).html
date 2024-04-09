@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>530p.~</title>
+</head>
+<body>
+    <script>
+    function addNumber(num1 , num2){
+        let sum = num1 + num2;
+        return sum;
+    }
+    let result = addNumber(5,12);
+    console.log(result)
+
+
+
+    function print(name, age, major="BA"){
+        console.log(`내 이름은 ${name}입니다.저는 ${age}살이고 전공은 ${major}입니다`);
+    }
+    print("배다은", 23, "BA");
+    print("배다은", 23); //기본값을 줬기때무에 콘솔에 MAJOR값 뜸
+    print("배다은", 23, "음악");
+
+
+
+    function print2(name, major="BA", age){ //매개변수 기본값줄려면 끝에 위치줘야함
+        console.log(`내 이름은 ${name}입니다.저는 ${age}살이고 전공은 ${major}입니다`);
+    }
+    print2("배다은","BA", 23);
+    //내 이름은 배다은입니다.저는 23살이고 전공은 BA입니다
+    print2("배다은", 23); 
+    //내 이름은 배다은입니다.저는 undefined살이고 전공은 23입니다
+
+    /*즉시실행함수*/
+    (function(){
+        var usname = prompt("이름?");
+        console.log(usname);
+    }())
+   
+    /*화사ㄹ표 함수*/ 
+    const addNumber3 = (num1,num2)=>{
+        let sum = num1 + num2;
+        return sum;
+    }
+
+    
+    
+    </script>
+</body>
+</html>

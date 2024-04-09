@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이벤트 545p.</title>
+    <style>
+        #desc{
+            display: none;
+            
+        }
+        #open{
+            position: absolute; bottom:30px; left: 30px;
+            background-color: rgba(255, 255, 255, 0.411);
+            border: solid rgba(0, 0, 0, 0);
+        }
+        #item{position:relative; width: 300px;}
+        #item img{width: 300px;}
+        #close{position:relative;}
+            
+          
+    </style>
+</head>
+<body>
+    <div id="item">
+        <img src="image/딸기.jpg" alt="">
+        <button id="open" onclick="showDetail()">상세 설명 보기</button>
+        <div id="desc">
+            <h1>딸기</h1>
+            <p>딸기는맛있다하지만복숭아가더좋다딸기는맛있다하지만복숭아가더좋다딸기는맛있다하지만복숭아가더좋다</p>
+            <button id ="close" onclick="hideDetail()">상세 설명 닫기</button>
+        </div>
+    </div>
+    <script>
+        function showDetail(){
+            document.querySelector("#desc").style.display = 'block';
+            document.querySelector("#open").style.display = 'none';
+        }
+        function hideDetail(){
+            document.querySelector("#desc").style.display = 'none';
+            document.querySelector("#open").style.display = 'block';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>자리배치도</title>
+  <style>
+    table,td{
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+  </style>
+</head>
+<body>
+  <h1>자리배치도</h1>
+  <script>
+    var total = parseInt(prompt("총 몇명?"));
+    var colnum = parseInt(prompt("한 줄에 몇명??"));
+    if(total % colnum ===0)
+      rownum = parseInt(total / colnum);
+    else
+      rownum = parseInt(total / colnum) +1;
+    document.write("<table>");
+      for( var row=0; row < rownum; row++){
+        document.write("<tr>");
+          for(var col = 0; col<colnum; col++){
+            document.write("<td>");
+              seatN = (col+1)+ row * colnum;
+              if(seatN > total) break; //좌석 수가 더 많아짐 방지
+              document.write(`좌석 ${seatN}`)
+          document.write("</td>");
+          }
+         document.write("</tr>");
+      }
+      document.write("</table>");
+
+      
+
+  </script>
+</body>
+</html>
