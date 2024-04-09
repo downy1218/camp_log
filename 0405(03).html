@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>개굴개굴개구리탈출을한다</title>
+</head>
+<body>
+  <script>
+    //어느 우물 안에는ㄴ 개구리가 한마리 살고있다. 이 개구리는 우물의 바닥서부터 벽을 타고 기어올라 밖으로 나오려고 한다
+    //개구리는 낮동안 우물 벽을 타고 3미터 기어오를수있지만 밤에는 자며 그동안 2미터 미끄러진다고한다
+    //우물의 깊이가 정확이 19.4m라면 오늘 낮부터 시작하여 이 개구리가 밖으로 나오기까지 최소 몇밤을 잠들어야 하는지 알아내라
+      //답 17일
+
+    function escape(depth, dayDistance, nightDistance) { //세개의 매개변수 설정
+    let nights = 0;  //탈출하는데필요한 밤의 수 
+    while (depth > 0) { //우물의깊이가 0m보다 클(1m,4m,5m깊어지니까)때까지만 실행
+        depth -= dayDistance;  //남은 우물의 길이 알 수 있음
+        if (depth <= 0) break;  //남은우물의길이가 0보다작거나같으면 반복중지
+        depth += nightDistance;  //그렇지않다면 밤동안미끄러진길이
+        nights++;               //나잇츠 하루 증가
+    }
+    return nights;
+}
+
+const nightsToEscape = escape(19.4, 3, 2); //escape함수호출
+document.write(`개구리가 우물을 탈출하는데 필요한 최소한의 밤의 수는 ${nightsToEscape}밤입니다.`);
+
+
+   
+  </script>
+</body>
+</html>
+

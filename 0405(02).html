@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>반복작업</title>
+</head>
+<body>
+  <script>
+    //문제: 어떤 프로그램은 임의의 자연수에 대해서 그 결과가 1이 될때까지 아래의 작업을 반복한다
+    //자연수가 짝수면 2로 나누고 홀수면 3을 곱하고 1을 더한 후 2로 나눈다 
+    //예를들어 자연수 5에서 시작했다면 5-8-4-2-1의 순서로 값이 변하며 1에 도달한다
+   
+    //이때에 작업횟수는 4회다 그렇다면 682는 위의 작업을 몇회 실행했을때 1에 도달할까?(답: 11회)
+
+     //1이될때까지 2로 나누는 작업을 반복하는것임
+    
+    function findStep(n){  //findStep 함수는 n을 매개변수로 받음
+    let steps = 0;       //작업횟수 변수 선언,초기화
+    while (n !== 1) {    //n이 1이 아닐때까지만 반복
+        if (n % 2 === 0) {
+            n /= 2;            // 연산자 /=
+        } else {
+            n = (n * 3 + 1) / 2;
+        }
+        steps++;       //작업이 한 번 수행될 때마다 steps 변수(작업횟수)가 증가
+                       //이러한 작업이 반복되면서 n이 1이 될 때까지 진행됨
+    }
+    return steps;
+}
+
+const num = 682; 
+const stepsToReachOne = findStep(num); //findstep의 실인수를 num으로 받는데 이때 num이 682로 정의돼있음
+document.write(`자연수 ${num}는 작업을 ${stepsToReachOne}회 실행하여 1에 도달합니다.`);
+
+
+  </script>
+</body>
+</html>
