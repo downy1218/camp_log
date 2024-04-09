@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>사용자로부터 양수를 받아들이는 반복문을 작성한다 입력된 값들의 평균 최소 최댓값을 출력하고 0을 입력하면 반복종료</h1>
+  <script>
+    var sum = 0; // 입력된 값들의 합을 저장할 변수
+    var count = 0; // 입력된 양수의 개수를 저장할 변수
+    var min = Infinity; // 최소값을 저장할 변수, 초기값을 무한대로 설정
+    var max = -Infinity; // 최댓값을 저장할 변수, 초기값을 음의 무한대로 설정
+    while (true){ // 무한 루프니까 for말고 while을 씀 
+      var input = parseInt(prompt("양수를 입력하세요 (0을 입력하면 종료):"));
+  
+      if (input === 0){ // 입력이 0이면 루프 종료
+        break;
+      }
+      if (input > 0){ // 입력이 양수일 때만 처리
+        sum += input; // sum에 입력된 값들의 합 더함
+        count++; // 입력된 양수의 개수 증가
+      
+        // 최솟값 갱신
+        if (input < min){
+            min = input;
+        }
+        // 최댓값 갱신
+        if (input > max){
+            max = input;
+        }
+      }
+    }
+    if (count > 0) { // 입력된 양수가 하나 이상인 경우에만 처리
+    var average = sum / count; // 평균 계산
+    console.log("평균:", average);
+    console.log("최소값:", min);
+    console.log("최댓값:", max);
+    } else {
+    console.log("입력된 양수가 없습니다.");
+    }
+      
+  </script>
+</body>
+</html>
