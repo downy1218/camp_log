@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>동적클릭 토글</title> 
+</head>
+<body>
+    <img src="img/toggle_off.png" onclick="toggle()" id="btn">
+    <script>
+        let btnStatus = false;
+        function toggle(){
+            if(btnStatus == false){
+                document.querySelector("#btn").setAttribute("src", "img/toggle_on.png");
+                btnStatus = true;
+            }
+            else{
+                document.querySelector("#btn").setAttribute("src", "img/toggle_off.png");
+                btnStatus = false;
+            }
+        }
+
+    </script>
+</body>
+</html>
+    
